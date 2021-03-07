@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-text-white w3-content" style="max-width:1600px;">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-light-blue w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="images/selfie.jpg" style="width:90%;" class="dancingDog"><br><br>
+    <h4><b>John Salgado</b></h4>
+    <p class="w3">Inspiring Coder<br>Gamer Extraordinaire</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-star w3-margin-right"></i>Design</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <h2><b>Inspirations</b></h2>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/kojima-1.jpg" alt="Kojima" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Hideo Kojima</b></p>
+        <p>A Japanese video game designer, director, producer and writer. Regarded as an auteur of video games, he developed a strong passion for action/adventure cinema and literature during his childhood and adolescence. After playing through his video game series and his progress in the video game industry, this is the person I aspire to push myself to be as his work are like masterpieces in my eyes. </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/officespace.jpg" alt="Battlestation" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>The Battle Station</b></p>
+        <p>After spending time teaching myself how to build computers from the ground up, my time at the desk is where I enjoy most of my time off. As the more time I feel learning about computer skills rather it's just learning deeper into computer engineering or more about coding. The more I grow intrigued to inspire myself to pushing my skills further.<br><br></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="images/pcparts.jpg" alt="pcparts" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Computer Engineering</b></p>
+        <p>I became first intrigued learning about building computers in my early 20's. With enough research and dedication to learning to do this correctly, I pushed through my nerves and finally completed my first PC Build and found it a very enjoyable hobby of mine. Since then, I stick to upgrading my PC and helping my friends learned what I learned and found it to be a very enjoyable feeling.<br><br></p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/codingDojo.jpg" alt="CodingDojo" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Coding Dojo</b></p>
+        <p>My current school of learning and the one school that has given me the belief that I can learn a technical skill I can enjoy learning. Its a struggle sometimes but once I develop my skills and learn what's there its definitely a great feeling of achievement. I'm grateful to my mentor and their assistants for teaching me new skills and pushing me to learn and push myself beyond, they have been a great help and committed in helping me learn.<br><br><br></p>
+      </div>
+    </div>  
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/japan.jpg" alt="Japan" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Japan</b></p>
+        <p>One of the cities thats on my bucket list to travel too and explore the culture, visit landmarks, and things I love. Most especially to try all the food I'm curious to try the authentic food.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="images/nvidia.jpg" alt="Nvidia" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Nvidia</b></p>
+        <p>Buying my first Graphics Card is one of my most unforgettable moments and my fresh start and first step into my hobby of handling tech, along with myself realizing this is something I want to see myself doing in my future career to aspire to grasp.<br><br> </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m4">
+      <img src="images/selfie2.jpg" alt="Me" style="width:100%">
+    </div>
+    <div class="w3-col m4">
+      <img src="images/selfie3.jpg" alt="Me" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px; ">
+    <h2><b>About Me</b></h2>
+    <p class="about_me"> Hello, welcome, and thanks for the time for coming by! Let me introduce myself by starting out with my name, John, current age 31, currently studying Web Development and other computer skills from being self-taught. <br><br>My favorite hobbies include gaming, movies, traveling, and computer building. What I hope to seek in my future career is a reliable work from home job and into a salary based job. Particularly working with a gaming company or the technology industry. However I'm not picky with where I end up going as I know in the long where I will end up where I want to be and with plenty of experience to provide for the industry as well as satisfying my curiousity of learning new skill sets.</p>
+    <hr>
+    
+    <h3><b>Technical Skills</b></h3>
+    <!-- Progress bars / Skills -->
+    <p><b>Gaming Experience</b></p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:100%">100%</div>
+    </div>
+    <p><b>Web Design</b></p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:65%">65%</div>
+    </div>
+    <p><b>Computer Engineering</b></p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+    </div>
+    <p>
+      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-download w3-margin-right"></i>Download Resume
+      </button>
+    </p>
+    <hr>
+  </div>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>John@Gmail.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Houston, Texas</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>(832) 312-3110</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>Questions?</h3>
+      <p>Please feel free to fill out the form above to reach me with any questions or concerns you may have.</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="images/pax.png" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">PAX South</span><br>
+          <span>Gaming Convention</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="images/discord.png" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Discord</span><br>
+          <span>Talk, Video Chat & Hang Out with Friends</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Gaming</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">PC Parts</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Japan</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">PC</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Houston</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Texas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Hideo Kojima</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Coding</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Steam</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+      </p>
+    </div>
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
